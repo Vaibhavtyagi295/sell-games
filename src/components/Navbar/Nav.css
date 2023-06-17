@@ -1,0 +1,94 @@
+/* Navbar.css */
+
+.navbar {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .company-name {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .company-logo {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+  .navbar-center {
+    flex-grow: 1;
+    margin: 0 20px;
+  }
+  
+  .search-bar {
+    width:25%;
+    padding: 5px;
+  }
+  
+  .navbar-right {
+    display: flex;
+    z-index: 999;
+  }
+  
+  .nav-link {
+    margin-right: 10px;
+  }
+  
+  /* Responsive styles */
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      margin-top: -5%;
+    }
+  
+    .navbar-left {
+      margin-bottom: 10px;
+    }
+  
+    .navbar-right {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #333;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .search-bar {
+      width: 100%;
+      padding: 10px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: white;
+      color: black;
+      font-size: 16px;
+      z-index: 999;
+    }
+  
+    .navbar-center {
+      margin: 0;
+    }
+  
+    .nav-link {
+      color: #fff;
+      font-size: 16px;
+      margin: 0 10px;
+    }
+  }
+  

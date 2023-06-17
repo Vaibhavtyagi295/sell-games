@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+  z-index: 1;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
+
+.cool-button {
+  background-color: #ff6f00; /* Replace with your desired background color */
+  color: #ffffff; /* Set text color to contrast with the background color */
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px; /* Adjust the border radius to change the shape */
+  cursor: pointer;
+}
